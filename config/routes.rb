@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  resources :lessons
   namespace :api do
     namespace :v1 do
       resources :courses
+      resources :lessons
     end
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
